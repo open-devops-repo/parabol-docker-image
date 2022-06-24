@@ -31,9 +31,15 @@ jobs:
         run: |
           VER=$(cat VERSION)
           echo "VERSION=$VER" >> $GITHUB_ENV
+
+      - name: Set .env
+        run: |
+          VER=$(cat VERSION)
+          echo "VERSION=$VER" >> $GITHUB_ENV
           pwd
           ls -l
           ls -l parabol
+          cp parabol.dockerimage.env parabol/.env
 
       - name: Build and push
         id: docker_build
