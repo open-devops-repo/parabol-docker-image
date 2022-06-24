@@ -41,7 +41,7 @@ jobs:
         with:
           #context: "{{defaultContext}}/parabol"
           context: parabol
-          file: "./docker/Dockerfile.prod"
+          file: "./parabol/docker/Dockerfile.prod"
           target: "prod"
           push: true
           tags: opendevopsrepo/parabol:${{ env.VERSION }}
