@@ -34,7 +34,8 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
-          context: "{{defaultContext}}/parabol"
+          #context: "{{defaultContext}}/parabol"
+          build-context: "project=path/to/project/source ."
           file: "./docker/Dockerfile.prod"
           target: "prod"
           push: true
