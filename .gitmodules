@@ -1,0 +1,3 @@
+[submodule "parabol"]
+	path = parabol
+	url = https://github.com/ParabolInc/parabol
