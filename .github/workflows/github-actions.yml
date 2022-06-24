@@ -29,6 +29,9 @@ jobs:
         run: |
           VER=$(cat VERSION)
           echo "VERSION=$VER" >> $GITHUB_ENV
+          pwd
+          ls -l
+          ls -l parabol
 
       - name: Build and push
         id: docker_build
