@@ -35,6 +35,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: "{{defaultContext}}:parabol"
+          file: "{context}/docker/Dockerfile.prod"
           push: true
           tags: opendevopsrepo/parabol:${{ env.VERSION }}
 
